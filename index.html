@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣海纜韌性：一場思想實驗</title>
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reset.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/black.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/plugin/highlight/monokai.css">
+    <style>
+      html, body { height: 100%; width: 100%; margin: 0; padding: 0; }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Cold Open -->
+        <section data-markdown="slides/00-cold-open.md"
+                 data-separator="^\n---\n$"
+                 data-separator-notes="^Note:">
+        </section>
+
+        <!-- Phase 1: 0–5 分鐘 -->
+        <section data-markdown="slides/01-phase1.md"
+                 data-separator="^\n---\n$"
+                 data-separator-notes="^Note:">
+        </section>
+
+        <!-- Phase 2: 5–30 分鐘 -->
+        <section data-markdown="slides/02-phase2.md"
+                 data-separator="^\n---\n$"
+                 data-separator-notes="^Note:">
+        </section>
+
+        <!-- Phase 3: 30–60 分鐘 -->
+        <section data-markdown="slides/03-phase3.md"
+                 data-separator="^\n---\n$"
+                 data-separator-notes="^Note:">
+        </section>
+
+      </div>
+    </div>
+    <script src="node_modules/reveal.js/dist/reveal.js"></script>
+    <script src="node_modules/reveal.js/dist/plugin/highlight.js"></script>
+    <script src="node_modules/reveal.js/dist/plugin/notes.js"></script>
+    <script src="node_modules/reveal.js/dist/plugin/markdown.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [RevealHighlight, RevealNotes, RevealMarkdown]
+      });
+    </script>
+  </body>
+</html>
