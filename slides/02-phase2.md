@@ -318,37 +318,6 @@ Note:
 本來不需要出海的本地流量，因為被迫繞路，
 也一起卡在壅塞的國際連結上。
 
----
-
-### 結果：伺服器在你旁邊，你卻連不上
-
-<div style="margin-top: 0.8em;">
-  <div class="fragment" style="display: flex; justify-content: center; gap: 1.5em; flex-wrap: wrap;">
-    <div style="background: rgba(255,255,255,0.05); padding: 0.8em; border-radius: 8px; min-width: 200px; text-align: center;">
-      <p>📍 伺服器位置</p>
-      <p style="font-size: 1.3em; font-weight: bold;">台北內湖</p>
-      <p style="color: #aaa;">離你 10 公里</p>
-    </div>
-    <div style="background: rgba(255,255,255,0.05); padding: 0.8em; border-radius: 8px; min-width: 200px; text-align: center;">
-      <p>📍 你的資料實際走的路</p>
-      <p style="font-size: 1.3em; font-weight: bold;">台北 → 東京 → 台北</p>
-      <p style="color: #aaa;">繞了 4,000 公里</p>
-    </div>
-  </div>
-</div>
-
-<p class="fragment fade-up" style="margin-top: 1em; font-size: 1.2em; color: #e74c3c;">
-  對外網路流量壅塞 → 這段繞路卡死<br>
-  → 你連 10 公里外的伺服器都連不上
-</p>
-
-<div class="fragment" style="margin-top: 0.8em;">
-  <p>這就是 <strong>tromboning</strong> 🎺</p>
-  <p style="color: #aaa; font-size: 0.85em;">「長號效應」：資料像長號的管子一樣繞一大圈</p>
-</div>
-
----
-
 ### 這個階段的兩個可能主要瓶頸
 
 <div class="fragment" style="margin-top: 1em; display: flex; justify-content: center; gap: 2em; flex-wrap: wrap;">
