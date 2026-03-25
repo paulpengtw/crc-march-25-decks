@@ -15,6 +15,12 @@
   <body>
     <div class="reveal">
       <div class="slides">
+        <!-- Intro -->
+        <section data-markdown="slides/00-intro.md"
+                 data-separator="^\n---\n$"
+                 data-separator-notes="^Note:">
+        </section>
+
         <!-- Cold Open -->
         <section data-markdown="slides/00-cold-open.md"
                  data-separator="^\n---\n$"
@@ -58,7 +64,7 @@
     <script src="node_modules/reveal.js/dist/plugin/notes.js"></script>
     <script src="node_modules/reveal.js/dist/plugin/markdown.js"></script>
     <script>
-      const ZOOM = 0.75;  // adjust this: >1 = bigger content, <1 = smaller
+      const ZOOM = 0.6;  // adjust this: >1 = bigger content, <1 = smaller
       Reveal.initialize({
         hash: true,
         width: Math.round(960 / ZOOM),

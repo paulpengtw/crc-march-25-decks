@@ -26,11 +26,21 @@ Note:
 - 你的 Wi-Fi 訊號滿格，但可能什麼都連不上 <!-- .element: class="fragment" -->
 
 <p class="fragment fade-up" style="margin-top: 1.5em; font-size: 1.1em;">
-  每一個網路障礙背後，都有<strong>技術原因</strong><br>
-  每一個技術原因，都能有<strong>減緩影響的方法</strong>
+  每一個網路障礙背後，都有<strong>可能原因</strong><br>
+  每一個原因，都可能能有<strong>減緩影響的方法</strong>
 </p>
 
 Note:
 預告整場簡報的結構：按時間順序走過斷纜後的 6 小時。
 每個階段揭示一層技術機制，同時指出該負責的對象。
 重點：這不是天災宿命，是人為選擇——而選擇可以被改變。
+
+---
+
+<!-- .slide: data-background-color="#1a1a2e" -->
+
+## g0v 數位韌性松
+
+Since 2023
+
+<img src="event-photo.png" alt="g0v 數位韌性松活動照片" style="max-width: 80%; border-radius: 8px; margin-top: 0.5em;">
