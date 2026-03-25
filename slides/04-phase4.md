@@ -417,7 +417,7 @@ Note:
 
 <p class="fragment fade-up" style="margin-top: 1em; font-size: 1.1em;">
   大多數台灣企業的服務落在<strong style="color: #f39c12;">中間那一列</strong><br>
-  <span style="color: #aaa;">看起來在台灣，但 dependency 可能在海外</span>
+  <span style="color: #aaa;">看起來在台灣，但 dependency 在海外</span>
 </p>
 
 Note:
