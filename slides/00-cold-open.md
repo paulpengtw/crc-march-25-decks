@@ -1,30 +1,33 @@
-## 現在是星期二下午
-### 你正在跟同事講 LINE 電話
+## 假設一個情境...某天下午
+### 你正在跟朋友講 LINE 電話
 
 <p class="fragment fade-up" style="margin-top: 1.5em; color: #e74c3c; font-size: 1.2em;">
-  地震。台灣南部外海數條海底電纜斷裂。
+  發生地震。台灣外海數條海底電纜斷裂。
 </p>
 
 <p class="fragment fade-up" style="font-size: 1.8em; font-weight: bold; margin-top: 0.8em;">
-  國際海纜容量瞬間損失 50%
+  台灣對外網路流量*瞬間損失 50%
+</p>
+<p class="fragment fade-up" style="font-size: 0.8em; font-weight: bold; margin-top: 0.8em;">
+  *有一半的海底電纜斷掉不等於失去一半的對外網路流量
 </p>
 
 Note:
 設定情境：讓聽眾代入自己正在使用 LINE 通話的日常場景。
-海底電纜是光纖，地震造成物理斷裂——光訊號直接消失。
-台灣目前有 14 條國際海纜，若南部海域受災，可能同時影響多條。
+海底電纜是光纖，地震造成物理斷裂——訊號直接消失。
+台灣目前有 14 條國際海纜，若外海受災，可能同時影響多條。
 
 ---
 
-## 接下來 6 小時會發生什麼事？
+## 接下來 6 小時可能會發生什麼事？
 
-- 你的 LINE 通話會斷掉 <!-- .element: class="fragment" -->
-- 你的 App 會一個接一個壞掉 <!-- .element: class="fragment" -->
-- 你的 Wi-Fi 訊號滿格——但什麼都連不上 <!-- .element: class="fragment" -->
+- 你的 LINE 通話可能會斷掉 <!-- .element: class="fragment" -->
+- 你的 App 可能會一個接一個壞掉 <!-- .element: class="fragment" -->
+- 你的 Wi-Fi 訊號滿格，但可能什麼都連不上 <!-- .element: class="fragment" -->
 
 <p class="fragment fade-up" style="margin-top: 1.5em; font-size: 1.1em;">
-  每一個故障背後，都有<strong>技術原因</strong><br>
-  每一個技術原因，都指向<strong>某個可以解決、但選擇不做的人</strong>
+  每一個網路障礙背後，都有<strong>技術原因</strong><br>
+  每一個技術原因，都能有<strong>減緩影響的方法</strong>
 </p>
 
 Note:

@@ -12,14 +12,14 @@ Note:
 
 ### 你感受到的
 
-- Google Drive 剛剛可能還能開，現在卡住了 <!-- .element: class="fragment" -->
-- 新聞網站可能文字有、圖片全消失 <!-- .element: class="fragment" -->
-- LINE 可能閃退後重開，可能登不回去了 <!-- .element: class="fragment" -->
-- 網銀 app 可能要你重新輸入密碼，然後愛的魔力轉圈圈 <!-- .element: class="fragment" -->
+- Google Drive 剛剛還能開——現在卡住了 <!-- .element: class="fragment" -->
+- 新聞網站文字有、圖片全消失 <!-- .element: class="fragment" -->
+- LINE 閃退後重開——登不回去了 <!-- .element: class="fragment" -->
+- 網銀 app 要你重新輸入密碼——然後轉圈圈 <!-- .element: class="fragment" -->
 
 <p class="fragment fade-up" style="font-size: 1.3em; margin-top: 1em;">
-  一次不會全壞<br>
-  <strong style="color: #f39c12;">可能是一個一個壞掉</strong>，且看起來毫無規律
+  不是一次全壞<br>
+  <strong style="color: #f39c12;">是一個一個壞掉</strong>——而且看起來毫無規律
 </p>
 
 Note:
@@ -30,7 +30,7 @@ Note:
 
 ---
 
-### 回到便利商店
+### 便利商店的比喻
 
 <div class="fragment" style="margin-top: 0.8em;">
   <p style="font-size: 1.2em;">你家旁邊的 <strong>7-11</strong> 🏪</p>
@@ -43,10 +43,9 @@ Note:
 </div>
 
 <p class="fragment fade-up" style="margin-top: 1em; font-size: 1.1em;">
-  網路世界也一樣，<br>
+  網路世界也一樣——<br>
   <strong style="color: #3498db;">CDN</strong> 就是你家旁邊的數位便利商店
 </p>
- <p style="color: #aaa;">Content Delivery Network</p>
 
 Note:
 CDN = Content Delivery Network，內容傳遞網路。
@@ -57,14 +56,14 @@ Cloudflare、Akamai、CloudFront 等公司在台灣設有「邊緣節點」（ed
 ---
 
 ### 保存期限：TTL
- <p style="color: #aaa;">Time To Live</p>
+
 <div class="fragment" style="margin-top: 0.8em;">
   <p>便利商店的便當有<strong>保存期限</strong></p>
   <p style="color: #aaa;">過期了就不能賣，要從倉庫補新的</p>
 </div>
 
 <div class="fragment" style="margin-top: 0.8em;">
-  <p>CDN 快取也有類似保存期限，叫做 <strong style="color: #3498db;">TTL</strong></p>
+  <p>CDN 快取也有保存期限——叫做 <strong style="color: #3498db;">TTL</strong></p>
   <p style="color: #aaa;">Time To Live：這份複製品可以用多久</p>
 </div>
 
@@ -74,7 +73,7 @@ Cloudflare、Akamai、CloudFront 等公司在台灣設有「邊緣節點」（ed
 </div>
 
 <p class="fragment fade-up" style="margin-top: 0.8em; font-size: 1.1em; color: #f39c12;">
-  前 30 分鐘大部分快取還沒到期，所以東西「還能用」<br>
+  前 30 分鐘大部分快取還沒到期——所以東西「還能用」<br>
   現在，保存期限開始一個一個到了
 </p>
 
@@ -95,7 +94,7 @@ jQuery 函式庫可能 TTL 有 1 年（因為幾乎不會變）。
 
 <div class="fragment" style="margin-top: 0.8em;">
   <p style="color: #e74c3c; font-size: 1.2em;">但通往倉庫的路塞爆了 🚛💨</p>
-  <p style="color: #aaa;">（對外流量壅塞 = 國際連線極度緩慢）</p>
+  <p style="color: #aaa;">（海纜壅塞 = 國際連線極度緩慢）</p>
 </div>
 
 <div class="fragment" style="margin-top: 0.8em;">
@@ -132,7 +131,7 @@ CDN 拿不到新資料，就不能繼續提供內容——使用者看到的就�
 
 <p class="fragment fade-up" style="margin-top: 1em; font-size: 1.1em;">
   這就是為什麼<strong style="color: #f39c12;">同一個網站有些部分能看、有些不行</strong><br>
-  <span style="color: #aaa;">結果以為是網站壞了，其實是快取到期的時間不同</span>
+  <span style="color: #aaa;">——不是網站壞了，是快取到期的時間不同</span>
 </p>
 
 Note:
@@ -147,8 +146,8 @@ Note:
 ### 什麼是 Auth Token？
 
 <p style="font-size: 1.2em; margin-top: 0.5em;">
-  <br>
-  假設我們去<strong style="color: #3498db;">遊樂園</strong>
+  先忘掉技術——<br>
+  我們去<strong style="color: #3498db;">遊樂園</strong>
 </p>
 
 <div class="fragment" style="margin-top: 1em;">
@@ -156,7 +155,7 @@ Note:
 </div>
 
 <p class="fragment fade-up" style="font-size: 1.1em; margin-top: 0.5em;">
-  去遊樂園<br>
+  想像你去遊樂園——<br>
   在入口<strong>買了票、驗了身分</strong><br>
   然後工作人員在你手上蓋了一個<strong style="color: #3498db;">章</strong>
 </p>
@@ -195,7 +194,7 @@ Auth Token（認證令牌）就是這個「章」。
 
 ---
 
-### 但印章會褪色
+### 但是——章會褪色
 
 <div class="fragment" style="margin-top: 0.8em;">
   <p style="font-size: 1.2em;">遊樂園的章用的是<strong style="color: #f39c12;">特殊墨水</strong></p>
@@ -213,7 +212,7 @@ Auth Token（認證令牌）就是這個「章」。
 </div>
 
 <p class="fragment fade-up" style="margin-top: 0.8em; color: #f39c12;">
-  所以 token 故意設計成會過期：安全機制
+  所以 token 故意設計成會過期——這是安全機制
 </p>
 
 Note:
@@ -224,7 +223,7 @@ Token 設計成短期有效是一個安全決策。
 
 ---
 
-### 章褪色了，回售票口重蓋
+### 章褪色了——回售票口重蓋
 
 <div class="fragment" style="margin-top: 0.8em;">
   <p style="font-size: 1.2em;">章褪色了 → 走回入口售票處 🎫</p>
@@ -252,14 +251,14 @@ Note:
 ### 售票處在海的另一邊
 
 <div class="fragment" style="margin-top: 0.8em;">
-  <p style="font-size: 1.1em;">Google 的認證伺服器 可能在 🇺🇸 美國</p>
-  <p style="font-size: 1.1em;">LINE 的認證伺服器 可能在 🇯🇵 日本</p>
-  <p style="font-size: 1.1em;">Microsoft 的認證伺服器 可能在 🇺🇸 美國</p>
+  <p style="font-size: 1.1em;">Google 的認證伺服器 → 🇺🇸 美國</p>
+  <p style="font-size: 1.1em;">LINE 的認證伺服器 → 🇯🇵 日本</p>
+  <p style="font-size: 1.1em;">Microsoft 的認證伺服器 → 🇺🇸 美國</p>
 </div>
 
 <div class="fragment" style="margin-top: 1em;">
-  <p>你的章褪色了 → 可能要跨海去重新蓋章</p>
-  <p style="color: #e74c3c; font-size: 1.2em;">但對外流量雍塞 = 那條路大塞車 🚗🚗🚗</p>
+  <p>你的章褪色了 → 要跨海去重新蓋章</p>
+  <p style="color: #e74c3c; font-size: 1.2em;">但海纜壅塞 = 那條路大塞車 🚗🚗🚗</p>
 </div>
 
 <p class="fragment fade-up" style="margin-top: 0.8em; font-size: 1.1em;">
@@ -285,22 +284,22 @@ Token 過期後，app 嘗試跟這些海外伺服器重新認證。
 
 <div style="margin-top: 0.5em;">
   <div class="fragment" style="background: rgba(255,255,255,0.05); padding: 0.6em 1em; border-radius: 8px; margin-bottom: 0.5em; max-width: 85%; margin-left: auto; margin-right: auto;">
-    <p style="text-align: left; margin: 0;">⏱️ 斷纜後 20 分鐘：<span style="color: #e74c3c;">Google Drive</span> 的章可能褪色了 → 可能被登出</p>
+    <p style="text-align: left; margin: 0;">⏱️ 斷纜後 20 分鐘：<span style="color: #e74c3c;">Google Drive</span> 的章褪色了 → 登出</p>
   </div>
   <div class="fragment" style="background: rgba(255,255,255,0.05); padding: 0.6em 1em; border-radius: 8px; margin-bottom: 0.5em; max-width: 85%; margin-left: auto; margin-right: auto;">
-    <p style="text-align: left; margin: 0;">⏱️ 斷纜後 35 分鐘：<span style="color: #e74c3c;">LINE</span> 的章可能褪色了 → 可能閃退後登不回去</p>
+    <p style="text-align: left; margin: 0;">⏱️ 斷纜後 35 分鐘：<span style="color: #e74c3c;">LINE</span> 的章褪色了 → 閃退後登不回去</p>
   </div>
   <div class="fragment" style="background: rgba(255,255,255,0.05); padding: 0.6em 1em; border-radius: 8px; margin-bottom: 0.5em; max-width: 85%; margin-left: auto; margin-right: auto;">
     <p style="text-align: left; margin: 0;">⏱️ 斷纜後 45 分鐘：<span style="color: #e74c3c;">網路銀行</span> 的章褪色了 → 要求重新登入 → 失敗</p>
   </div>
   <div class="fragment" style="background: rgba(255,255,255,0.05); padding: 0.6em 1em; border-radius: 8px; margin-bottom: 0.5em; max-width: 85%; margin-left: auto; margin-right: auto;">
-    <p style="text-align: left; margin: 0;">⏱️ 斷纜後 50 分鐘：<span style="color: #e74c3c;">公司 Slack</span> 的章可能褪色了 → 可能完全斷線</p>
+    <p style="text-align: left; margin: 0;">⏱️ 斷纜後 50 分鐘：<span style="color: #e74c3c;">公司 Slack</span> 的章褪色了 → 完全斷線</p>
   </div>
 </div>
 
 <p class="fragment fade-up" style="margin-top: 0.8em; font-size: 1.2em; color: #f39c12;">
   這就是為什麼看起來「毫無規律」<br>
-  <span style="font-size: 0.9em; color: #aaa;">因為每個 app 的章在不同時間褪色</span>
+  <span style="font-size: 0.9em; color: #aaa;">——每個 app 的章在不同時間褪色</span>
 </p>
 
 Note:
@@ -342,7 +341,7 @@ Note:
 </div>
 
 <p class="fragment" style="margin-top: 0.5em; color: #aaa; font-size: 0.9em;">
-  最後一段是<strong>數位簽章</strong>：防止偽造，只有伺服器能產生
+  最後一段是<strong>數位簽章</strong>——防止偽造，只有伺服器能產生
 </p>
 
 Note:
@@ -416,29 +415,29 @@ Note:
 
 ---
 
-### 海纜斷裂時可能的連鎖反應
+### 海纜斷裂時的連鎖反應
 
 <div style="margin-top: 0.5em; max-width: 90%; margin-left: auto; margin-right: auto;">
   <div class="fragment" style="border-left: 3px solid #3498db; padding-left: 1em; margin-bottom: 0.5em;">
     <p style="margin: 0;">Access Token 到期</p>
-    <p style="margin: 0; color: #aaa; font-size: 0.9em;">app 可能在背景嘗試用 Refresh Token 換新的</p>
+    <p style="margin: 0; color: #aaa; font-size: 0.9em;">app 在背景嘗試用 Refresh Token 換新的</p>
   </div>
   <div class="fragment" style="border-left: 3px solid #f39c12; padding-left: 1em; margin-bottom: 0.5em;">
-    <p style="margin: 0;">Refresh 可能請求送往海外認證伺服器</p>
+    <p style="margin: 0;">Refresh 請求送往海外認證伺服器</p>
     <p style="margin: 0; color: #aaa; font-size: 0.9em;">但國際連線壅塞⋯⋯等 10 秒、20 秒⋯⋯</p>
   </div>
   <div class="fragment" style="border-left: 3px solid #e74c3c; padding-left: 1em; margin-bottom: 0.5em;">
     <p style="margin: 0; color: #e74c3c;">逾時失敗 ✗</p>
-    <p style="margin: 0; color: #aaa; font-size: 0.9em;">app 判定「認證失效」→ 可能強制登出</p>
+    <p style="margin: 0; color: #aaa; font-size: 0.9em;">app 判定「認證失效」→ 強制登出</p>
   </div>
   <div class="fragment" style="border-left: 3px solid #e74c3c; padding-left: 1em; margin-bottom: 0.5em;">
     <p style="margin: 0;">跳出登入頁面 → 你輸入帳號密碼</p>
-    <p style="margin: 0; color: #e74c3c; font-size: 0.9em;">但登入頁面本身可能也要連到海外伺服器 → 也逾時 ✗</p>
+    <p style="margin: 0; color: #e74c3c; font-size: 0.9em;">但登入頁面本身也要連到海外伺服器 → 也逾時 ✗</p>
   </div>
 </div>
 
 <p class="fragment fade-up" style="margin-top: 0.8em; font-size: 1.2em; color: #e74c3c;">
-  登出了，而且<strong>可能登不回去</strong>
+  登出了，而且<strong>登不回去</strong>
 </p>
 
 Note:
@@ -452,22 +451,22 @@ Note:
 
 ---
 
-### 你的 App 可能正在一個一個登出
+### 你的 App 正在一個一個登出
 
 <div class="fragment" style="background: rgba(255,255,255,0.05); padding: 0.8em; border-radius: 8px; margin-top: 0.5em; max-width: 90%; margin-left: auto; margin-right: auto;">
   <p style="text-align: left; font-size: 1em;">
-    <span style="color: #2ecc71;">t+0 min</span>　對外流量驟降：所有 Token 開始倒數<br>
+    <span style="color: #2ecc71;">t+0 min</span>　海纜斷裂——所有 Token 開始倒數<br>
     <span style="color: #2ecc71;">t+15 min</span>　<span style="color: #aaa;">網銀 token 到期 → 被登出</span><br>
-    <span style="color: #f39c12;">t+25 min</span>　<span style="color: #aaa;">Slack token 到期 → 可能離線</span><br>
-    <span style="color: #f39c12;">t+35 min</span>　<span style="color: #aaa;">LINE 需要重新驗證 → 可能失敗</span><br>
-    <span style="color: #e74c3c;">t+45 min</span>　<span style="color: #aaa;">Google Drive token 到期 → 可能無法存取文件</span><br>
-    <span style="color: #e74c3c;">t+60 min</span>　<span style="color: #aaa;">可能幾乎所有需要認證的服務都已失效</span>
+    <span style="color: #f39c12;">t+25 min</span>　<span style="color: #aaa;">Slack token 到期 → 離線</span><br>
+    <span style="color: #f39c12;">t+35 min</span>　<span style="color: #aaa;">LINE 需要重新驗證 → 失敗</span><br>
+    <span style="color: #e74c3c;">t+45 min</span>　<span style="color: #aaa;">Google Drive token 到期 → 無法存取文件</span><br>
+    <span style="color: #e74c3c;">t+60 min</span>　<span style="color: #aaa;">幾乎所有需要認證的服務都已失效</span>
   </p>
 </div>
 
 <p class="fragment fade-up" style="margin-top: 0.8em; font-size: 1.1em;">
-  「一次斷線」不太可能發生<strong style="color: #e74c3c;">比較像慢動作的大規模登出</strong><br>
-  <span style="color: #aaa; font-size: 0.9em;">每個人、每個 app、不同時間：看起來完全隨機</span>
+  不是「一次斷線」——是一場<strong style="color: #e74c3c;">慢動作的大規模登出</strong><br>
+  <span style="color: #aaa; font-size: 0.9em;">每個人、每個 app、不同時間——看起來完全隨機</span>
 </p>
 
 Note:
@@ -480,7 +479,7 @@ Note:
 
 ---
 
-### 接下來：DNS
+### 接下來——DNS
 
 <p style="font-size: 1.2em; margin-top: 1em;">
   CDN 快取到期 → 內容消失<br>
@@ -513,7 +512,7 @@ DNS 對一般聽眾來說更陌生，所以我們需要從最基礎開始解釋�
 
 <div class="fragment" style="margin-top: 0.8em;">
   <p style="font-size: 1.2em;">電腦只懂<strong>數字地址</strong>：<span style="color: #3498db;">142.250.185.46</span></p>
-  <p style="color: #aaa;">這叫 IP 位址：像電話號碼一樣，每台伺服器都有一組</p>
+  <p style="color: #aaa;">這叫 IP 位址——像電話號碼一樣，每台伺服器都有一組</p>
 </div>
 
 <p class="fragment fade-up" style="margin-top: 1em; font-size: 1.2em;">
@@ -555,7 +554,7 @@ DNS 就是中間的翻譯層，把人看得懂的名字轉成電腦看得懂的�
   </div>
   <div class="fragment" style="border-left: 3px solid #2ecc71; padding-left: 1em;">
     <p style="margin: 0; color: #2ecc71;">4️⃣ 查到了！把結果記在通訊錄裡下次用</p>
-    <p style="margin: 0; color: #aaa; font-size: 0.85em;">這就是「DNS 快取」：記住查到的結果，省得每次都打電話問</p>
+    <p style="margin: 0; color: #aaa; font-size: 0.85em;">這就是「DNS 快取」——記住查到的結果，省得每次都打電話問</p>
   </div>
 </div>
 
@@ -585,7 +584,7 @@ DNS 查詢的層級：
 </div>
 
 <p class="fragment fade-up" style="margin-top: 1em; font-size: 1.1em; color: #f39c12;">
-  所以 DNS 快取也有 TTL：過期就要<strong>重新查號</strong><br>
+  所以 DNS 快取也有 TTL——過期就要<strong>重新查號</strong><br>
   <span style="color: #aaa; font-size: 0.9em;">平常幾十毫秒搞定，你完全不會發現</span>
 </p>
 
@@ -611,13 +610,13 @@ DNS 記錄的 TTL 由網站管理者設定。
 </div>
 
 <div class="fragment" style="margin-top: 0.8em;">
-  <p>但 DNS 快取到期了：需要重新查號</p>
-  <p style="color: #aaa;">權威 DNS 伺服器在哪？<span style="color: #e74c3c;">可能在美國（e.g. AWS Route 53）</span></p>
+  <p>但 DNS 快取到期了——需要重新查號</p>
+  <p style="color: #aaa;">權威 DNS 伺服器在哪？<span style="color: #e74c3c;">美國的 AWS Route 53</span></p>
 </div>
 
 <p class="fragment fade-up" style="margin-top: 0.8em; font-size: 1.2em; color: #e74c3c;">
   查號的電話打不通 → 你<strong>查不到門牌號碼</strong><br>
-  <span style="font-size: 0.9em;">伺服器就在 10 公里外：但你找不到它</span>
+  <span style="font-size: 0.9em;">伺服器就在 10 公里外——但你找不到它</span>
 </p>
 
 <p class="fragment" style="margin-top: 0.5em; color: #aaa; font-size: 0.9em;">

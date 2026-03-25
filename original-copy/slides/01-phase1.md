@@ -8,12 +8,12 @@ Note:
 
 ---
 
-### 你可能會感受到的
+### 你感受到的
 
 - LINE 語音通話 → 機器人聲音 → 斷線 ☎️❌ <!-- .element: class="fragment" -->
 - Instagram → 白畫面 <!-- .element: class="fragment" -->
 - Google Drive → 載入一半，卡住不動 <!-- .element: class="fragment" -->
-- 看一眼右上角 <!-- .element: class="fragment" -->
+- 你看一眼右上角—— <!-- .element: class="fragment" -->
 
 <p class="fragment fade-up" style="font-size: 1.6em; margin-top: 0.8em;">
   Wi-Fi 訊號滿格 📶
@@ -26,7 +26,7 @@ Note:
 
 ---
 
-### 「是 WiFi 機的問題，還是網路的問題？」
+### 「是我的問題，還是網路的問題？」
 
 <div class="fragment" style="margin-top: 1em;">
   <p style="font-size: 1.1em;">Wi-Fi 訊號滿格 ≠ 網路正常</p>
@@ -54,7 +54,7 @@ Wi-Fi 只是最後一哩：手機到路由器的無線連線。
 
 ---
 
-### 當代的網路到底是什麼？
+### 網路到底是什麼？
 
 想像網路是一個由**幾千間郵局**組成的系統 <!-- .element: class="fragment" style="font-size: 1.1em;" -->
 
@@ -100,7 +100,7 @@ Note:
 
 <div class="fragment">
   <p>郵局之間互相更新路牌的方法，就叫 <strong>BGP</strong></p>
-  <p style="color: #aaa; font-size: 0.8em;">Border Gateway Protocol 邊界閘道協定</p>
+  <p style="color: #aaa; font-size: 0.8em;">Border Gateway Protocol — 邊界閘道協定</p>
 </div>
 
 Note:
@@ -114,7 +114,7 @@ BGP = 郵局之間互相通知「路怎麼走」的系統。
 ### 海纜斷了 = 路斷了
 
 <div class="fragment" style="margin-top: 1em;">
-  <p>光纖裡的光束<strong>直接消失</strong>（畢竟斷了）</p>
+  <p>光纖裡的光訊號<strong>直接消失</strong>（物理斷裂）</p>
 </div>
 
 <div class="fragment" style="margin-top: 0.8em;">
@@ -178,20 +178,20 @@ BGP reconvergence 是整個網路重新達成共識的過程。
 
 ---
 
-### 對你來說，可能就是
+### 對你來說，就是——
 
 <h2 class="fragment" style="color: #e74c3c;">全部斷了</h2>
 
 <div class="fragment" style="margin-top: 1em; text-align: left; max-width: 75%; margin-left: auto; margin-right: auto;">
-  <p>封包被丟掉 → 網頁可能載不出來</p>
-  <p>封包繞遠路 → 延遲可能從 20ms 變 2000ms</p>
-  <p>封包來回彈 → 可能根本到不了目的地</p>
+  <p>封包被丟掉 → 網頁載不出來</p>
+  <p>封包繞遠路 → 延遲從 20ms 變 2000ms</p>
+  <p>封包來回彈 → 根本到不了目的地</p>
 </div>
 
 <p class="fragment fade-up" style="margin-top: 1em; font-size: 1.1em;">
-  實際上 50% 的對外網路流量還在<br>
+  實際上 50% 的海纜還在<br>
   但在路由重算完成之前<br>
-  對一般人來說可能就是<strong>卡爆</strong>
+  <strong>可用率接近零</strong>
 </p>
 
 Note:
@@ -203,12 +203,12 @@ Note:
 
 ---
 
-### 假設 LINE 語音掛了，<br>但文字可能還活著？
+### 為什麼 LINE 語音死了，<br>但文字可能還活著？
 
 <div class="fragment" style="margin-top: 1em; display: flex; justify-content: center; gap: 2em; flex-wrap: wrap;">
   <div style="background: rgba(46,204,113,0.1); padding: 1em; border-radius: 8px; flex: 1; min-width: 250px; max-width: 350px;">
     <p style="font-size: 1.2em;">💬 文字訊息</p>
-    <p>很小的封包（可能僅幾 KB）</p>
+    <p>很小的封包（幾 KB）</p>
     <p>能鑽過混亂的空隙</p>
     <p>晚幾秒到也沒差</p>
   </div>
@@ -221,10 +221,10 @@ Note:
 </div>
 
 <div class="fragment" style="margin-top: 1.2em; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 0.8em;">
-  <p>我們還不確定的是：</p>
+  <p>更深的問題：</p>
   <p style="color: #e74c3c; font-size: 1.1em;">
-    LINE 的通話伺服器<strong>可能在日本？</strong><br>
-    台灣的語音通話<strong>可能必須出海</strong>才能接通？
+    LINE 的通話控制伺服器<strong>在日本</strong><br>
+    你的語音<strong>必須出海</strong>才能接通
   </p>
 </div>
 
@@ -235,6 +235,28 @@ Note:
 和語音中繼（relay）伺服器都在日本。
 即使兩個台灣用戶互打，語音資料仍需經由海纜到日本再回來。
 這是一個工程架構的選擇，不是技術限制。
+
+---
+
+### 這個階段，該找誰負責？
+
+<h2 style="color: #3498db;">LINE</h2>
+
+<div style="margin-top: 1em; text-align: left; max-width: 80%; margin-left: auto; margin-right: auto;">
+  <p class="fragment">📊 LINE 在台灣有 <strong>~2,100 萬</strong>用戶<br>
+    <span style="color: #aaa;">→ 事實上的關鍵通訊基礎設施</span></p>
+  <p class="fragment">✅ 文字中繼可以透過 <strong>TPIX</strong> 本地對等互連運作<br>
+    <span style="color: #aaa;">→ LINE 已經有本地 peering，文字可以留在島內</span></p>
+  <p class="fragment">❌ 但語音/視訊的<strong>通話控制與中繼</strong>仍在日本<br>
+    <span style="color: #aaa;">→ 海纜一斷，兩個台北人也打不通電話</span></p>
+</div>
+
+<div class="fragment" style="margin-top: 1.2em; border: 2px solid #3498db; padding: 0.8em; border-radius: 8px;">
+  <p style="font-size: 1.1em;"><strong>訴求：</strong>在台灣部署本地通話控制與中繼伺服器<br>
+  讓語音通話在海纜降級時仍能島內運作</p>
+</div>
+
+Note:
 LINE 在台灣的地位等同於關鍵基礎設施。
 文字訊息已經可以透過 TPIX 本地交換，但語音通話的
 call signaling 和 media relay 仍然依賴日本。
@@ -242,4 +264,3 @@ call signaling 和 media relay 仍然依賴日本。
 訴求很具體：部署台灣本地的通話控制伺服器，
 讓語音通話在國際鏈路降級時可以純島內運作。
 LINE 有足夠的工程資源做到這件事。
-LINE 在台灣有 <strong>~2,100 萬</strong>用
