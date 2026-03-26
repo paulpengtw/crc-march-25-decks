@@ -1,3 +1,14 @@
+# 台灣對外網路流量 degrade 模擬
+
+## CHENG PENG (paulpengtw) 
+## @ [crcolab.art](https://crcolab.art)
+
+#### Mar 25 (Wed) 2026 / NPO HUB Taipei
+
+簡報所有內容皆以 [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hant) by CHENG PENG (paulpengtw) 授權釋出
+
+---
+
 ## 假設一個情境...某天下午
 ### 你正在跟朋友講 LINE 電話
 

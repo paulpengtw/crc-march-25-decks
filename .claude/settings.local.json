@@ -6,7 +6,8 @@
       "Bash(curl -s http://localhost:3000)",
       "Bash(node:*)",
       "Bash(git config:*)",
-      "Bash(grep -v '.git$')"
+      "Bash(grep -v '.git$')",
+      "Bash(grep -r \"footer\\\\|watermark\\\\|reveal-footer\" /Users/cheng/crc-march-25-decks --include=*.html --include=*.md)"
     ]
   }
 }

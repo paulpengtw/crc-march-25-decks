@@ -10,17 +10,27 @@
     <link rel="stylesheet" href="node_modules/reveal.js/dist/plugin/highlight/monokai.css">
     <style>
       html, body { height: 100%; width: 100%; margin: 0; padding: 0; }
+      #presentation-footer {
+        position: fixed;
+        bottom: 1em;
+        left: 1.5em;
+        right: 1.5em;
+        display: flex;
+        justify-content: space-between;
+        font-family: "Source Sans Pro", Helvetica, sans-serif;
+        font-size: 1.25em;
+        color: rgba(255, 255, 255, 0.4);
+        z-index: 100;
+      }
+      #presentation-footer a {
+        color: inherit;
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <!-- Intro -->
-        <section data-markdown="slides/00-intro.md"
-                 data-separator="^\n---\n$"
-                 data-separator-notes="^Note:">
-        </section>
-
         <!-- Cold Open -->
         <section data-markdown="slides/00-cold-open.md"
                  data-separator="^\n---\n$"
@@ -59,6 +69,10 @@
 
       </div>
     </div>
+    <footer id="presentation-footer">
+      <span><a href="https://crcolab.art" target="_blank" rel="noopener noreferrer">CHENG PENG (paulpengtw) @ crcolab.art</a></span>
+      <span><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hant" target="_blank" rel="noopener noreferrer">簡報所有內容皆以 CC-BY-SA 4.0 by CHENG PENG (paulpengtw) 授權釋出</a></span>
+    </footer>
     <script src="node_modules/reveal.js/dist/reveal.js"></script>
     <script src="node_modules/reveal.js/dist/plugin/highlight.js"></script>
     <script src="node_modules/reveal.js/dist/plugin/notes.js"></script>
@@ -71,6 +85,11 @@
         height: Math.round(700 / ZOOM),
         margin: 0.04,
         plugins: [RevealHighlight, RevealNotes, RevealMarkdown]
+      }).then(() => {
+        document.querySelectorAll('.slides a[href^="http"]').forEach(a => {
+          a.setAttribute('target', '_blank');
+          a.setAttribute('rel', 'noopener noreferrer');
+        });
       });
     </script>
   </body>
